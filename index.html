@@ -12,7 +12,7 @@
   
 </head>
 <body>
-<div class='container'>
+<div class='container'><!-- Container -->
   <div class="row">
     <div class="col-md-12">
       <nav class="navbar navbar-default" role="navigation">
@@ -49,8 +49,8 @@
     </h2><br>
     <p class="text-center"><b  style="background-color: rgb(255, 4, 4);color:white;padding:10px;border-radius:10px">Where your needs are our priority!</b></p>
     <div>
-      <img id="runner" src="https://i5.walmartimages.com/asr/ff6db96a-6543-41b9-950d-d84342f35adc_1.5439a2fbef664f277c72123462ae0d97.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff">
-      <img id="runner2" style="display:none;" src="https://i.pinimg.com/originals/69/4d/7f/694d7f3d0f805ec8566dfed122749b09.png">
+      <img id="runner" src="https://i5.walmartimages.com/asr/ff6db96a-6543-41b9-950d-d84342f35adc_1.5439a2fbef664f277c72123462ae0d97.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff" alt="Wile">
+      <img id="runner2" style="display:none;" src="https://i.pinimg.com/originals/69/4d/7f/694d7f3d0f805ec8566dfed122749b09.png" alt="RoadRunner">
     </div>    
   </div>
   <div class="col-sm-4">
@@ -60,9 +60,12 @@
 
 
     <div class="footer navbar-fixed-bottom">
+      <footer>
       <div class="text-right">
-        <p class="text-light bg-dark">Jeremy Ward <i class="fa fa-github"></i><a href=""> exochos </a></p></div>
-    </footer>
+        <p class="text-light bg-dark">Jeremy Ward <i class="fa fa-github"></i><a href=""> exochos </a></p>
+      </div>
+      </footer>
+</div>
 </div>
 <script>
 setTimeout(function(){ 
@@ -71,7 +74,7 @@ setTimeout(function(){
     left: "+=50",
     height: "toggle"
   }, 5000, function() {
-    // Animation complete.
+    // TODO
   });
   $("#runner2").animate({
     opacity: "+=0.25",
@@ -82,12 +85,6 @@ setTimeout(function(){
   });
   
 }, 3000);
-
-  $(this).attr("src", "https://secure.img1-fg.wfcdn.com/im/49742455/compr-r85/4145/41451772/looney-tunes-road-runner-standup.jpg");
-  $(this).css("background-color", "white");
-  $("#title").html("RoadRunner")
-  $("#toggle").hide('slow');
-  $("#info").hide('slow');
 </script>
 </body>
 </html>
