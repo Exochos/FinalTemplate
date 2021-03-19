@@ -17,7 +17,7 @@
 <div class='container'>
   <div class="row">
     <div class="col-md-12">
-      <nav class="navbar navbar-default" role="navigation">
+      <nav class="navbar navbar-default">
         <div class='col-md-12'>
           <div class="navbar-header">
             <a class="navbar-brand" href="#"><b style="color:red;">Acme Brands</b></a>
@@ -44,14 +44,14 @@
 <div class="row">
   <div class="col-sm-4"></div>
     <div class="col-sm-4 bg-info">
-        <form id="contact-form" name="registration" class="form" action="">
+        <form id="contact-form" name="registration" class="form" action="index.html">
           <h3 style="font-family: 'Acme', sans-serif;">Contact us</h3>
             <div class="form-group">
-                <label class="form-label" id="nameLabel" for="firstname"></label>
+                <label class="form-label" id="firstnameLabel" for="firstname"></label>
                 <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Your first name" tabindex="1">
             </div>
             <div class="form-group">
-              <label class="form-label" id="nameLabel" for="lastname"></label>
+              <label class="form-label" id="lastnameLabel" for="lastname"></label>
               <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Your last name" tabindex="2">
           </div>
 
@@ -60,7 +60,7 @@
                 <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" tabindex="2">
             </div>
             <div class="form-group">
-                <label class="form-label" id="subjectLabel" for="sublect"></label>
+                <label class="form-label" id="subjectLabel" for="subject"></label>
                 <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3">
             </div>
             <div class="form-group">
@@ -78,9 +78,11 @@
 </div><!-- End row -->
 </div>
 <div class="footer navbar-fixed-bottom">
+  <footer>
   <div class="text-right">
     <p class="text-light bg-dark">Jeremy Ward <i class="fa fa-github"></i><a href=""> exochos </a></p></div>
 </footer>
+</div>
 <script>
   // Wait for the DOM to be ready
 $(function() {
