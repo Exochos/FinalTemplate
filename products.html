@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Acme Brands</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='css/styles.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  <script src="https://use.fontawesome.com/ffba7c47d5.js"></script>
+  <style>
+    .demo {
+    width:450px;
+}
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+  </style>
+</head>
+<body>
+<div class='container'>
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class='col-md-12'>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b style="color:red;">Acme Brands</b></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="index.html">Home</a>
+              </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+</div>
+
+<div class="row">
+<div class="col-sm-6">
+  <h2>Products:</h2><br>
+</div>
+</div>
+<div class="row">
+
+  <div class="col-sm-6">
+      
+        
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>Dynamite</b></div>
+        <div class="panel-body"><img src="https://static.turbosquid.com/Preview/2015/11/20__00_22_52/Cartoon_Dynamite_Bomb_Camera001_Thumbnail_1.JPG90dd51fb-a5a7-4b3e-9233-682315d33a1eOriginal.jpg" class="card-img-top" alt="..." width="300"></div>
+        <div class="panel-footer">Artisanal Hand Crafted<br>Only $200.00 Now!<br><button type="button" class="btn btn-warning" id="dyno">Buy Now!</button><br></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>Anvil</b></div>
+        <div class="panel-body"><img src="https://www.acmetools.com/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/products/full/2981BAD2-ACAD-4772-B2AA-312A5C3CE44D.jpg" class="card-img-top" alt="..." width="300"></div>
+        <div class="panel-footer">Super Heavy - Well suited for dropping on heads<br>Only $400.00 Now!<br><button type="button" class="btn btn-warning" id="anvil">Buy Now!</button><br></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>Do it youself Tornado Kit</b></div>
+        <div class="panel-body"><img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/acme_do_it_yourself_tornado_kit.jpg?q=50&fit=crop&w=297&dpr=1.5" class="card-img-top" alt="..." width="300"></div>
+        <div class="panel-footer">Seed it yourself!<br>Only $100.00 Now!<br><button type="button" class="btn btn-warning" id="tornado">Buy Now!</button></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><b>Jet Propelled Tennis Shoes</b></div>
+        <div class="panel-body"><img src="https://storage.googleapis.com/thehundreds/media/2018/09/jet-propelled-tennis-shoes-fleet-foot.png" class="card-img-top" alt="..." width="300"></div>
+        <div class="panel-footer">Haha Shoes Go BRRRT!<br>Only $150.00 Now!<br><button type="button" class="btn btn-warning" id="shoes">Buy Now!</button></div>
+      </div>
+</div>
+  <div class="col-sm-6">
+    <div class="jumbotron">
+<h2>About our Products:</h2><br>
+<p>We source all of our products from sustainabily farmed roadrunners.</p>
+    </div>
+    <div class="jumbotron" id="cart">
+      <h3>Cart:</h3>
+    </div>
+
+    </div>
+  </div>
+
+    <div class="footer navbar-fixed-bottom">
+      <footer><div class="text-right"><p class="text-light bg-dark">Jeremy Ward <i class="fa fa-github"></i><a href=""> exochos </a></p></div></footer>
+</div>
+<script>
+  $("#dyno").click(function() {
+ $("#cart").append("Added 1 DynoMite!<br>");
+});
+$("#anvil").click(function() {
+$("#cart").append("Added 1 Anvil!<br>");
+});
+$("#tornado").click(function() {
+ $("#cart").append("Added 1 Tornado!<br>");
+});
+$("#shoes").click(function() {
+ $("#cart").append("Added 1 Jet Propelled Shoes!<br>");
+});
+</script>
+</body>
+</html>
+

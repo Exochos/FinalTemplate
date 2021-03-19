@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Acme Brands</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='css/styles.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  <script src="https://use.fontawesome.com/ffba7c47d5.js"></script>
+  
+</head>
+<body>
+<div class='container'>
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class='col-md-12'>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b style="color:red;">Acme Brands</b></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="index.html">Home</a>
+              </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+    <h2>
+      Welcome to Acme Brands!  
+    </h2><br>
+    <p class="text-center"><b  style="background-color: rgb(255, 4, 4);color:white;padding:10px;border-radius:10px">Where your needs are our priority!</b></p>
+    <div>
+      <img id="runner" src="https://i5.walmartimages.com/asr/ff6db96a-6543-41b9-950d-d84342f35adc_1.5439a2fbef664f277c72123462ae0d97.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff">
+      <img id="runner2" style="display:none;" src="https://i.pinimg.com/originals/69/4d/7f/694d7f3d0f805ec8566dfed122749b09.png">
+    </div>    
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
+
+
+    <div class="footer navbar-fixed-bottom">
+      <div class="text-right">
+        <p class="text-light bg-dark">Jeremy Ward <i class="fa fa-github"></i><a href=""> exochos </a></p></div>
+    </footer>
+</div>
+<script>
+setTimeout(function(){ 
+  $("#runner").animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+  $("#runner2").animate({
+    opacity: "+=0.25",
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
+  });
+  
+}, 3000);
+
+  $(this).attr("src", "https://secure.img1-fg.wfcdn.com/im/49742455/compr-r85/4145/41451772/looney-tunes-road-runner-standup.jpg");
+  $(this).css("background-color", "white");
+  $("#title").html("RoadRunner")
+  $("#toggle").hide('slow');
+  $("#info").hide('slow');
+</script>
+</body>
+</html>
+

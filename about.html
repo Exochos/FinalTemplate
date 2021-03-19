@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Acme Brand: Contact Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='css/styles.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+  <script src="https://use.fontawesome.com/ffba7c47d5.js"></script>
+  
+</head>
+<body>
+<div class='container'>
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class='col-md-12'>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><b style="color:red;">Acme Brands</b></a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="index.html">Home</a>
+              </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-sm-4">
+  </div>
+  <div class="col-sm-4">
+    <img class="text-right" id="pic1" src="https://i.pinimg.com/originals/cd/9a/f3/cd9af3b4b2bfdb850960c3f9ce395a01.png">
+  </div>
+    <div class="col-sm-4">
+      <h2><b id="title">Wile E. Coyote</b></h2>
+      <h3><b>CEO & CFO</b></h3>
+      <div id="info">
+        <h4><b>The mission of Acme Corporation Technology is to create technology solutions for forward-thinking organizations</b></h4>
+        <p>
+          <h4>VISION STATEMENT</h4>
+            To be known as the technology experts and resource center for small to medium-sized organizations.
+        </p>
+      <p>
+        <b>CORE VALUES</b>
+        <ul>
+          <li>Purpose & Growth - our foundation is built on our purpose and provides a place for our team's passion</li>
+          <li>Client Focus - a razor-sharp focus on our customer's growth is essential and the only way to succeed.</li>
+          <li>Integrity - to have honesty and respect for all individuals.</li>
+          <li>Leadership - to empower and inspire entrepreneurial leaders.</li>
+          <li>Professionalism - to be professional in our actions to our clients, partners and each other.</li>
+          <li>Excellence - to continually pursue knowledge and learn.</li>
+        </ul>
+      </p>
+    </div>
+      <div id="toggle">
+      <h3><i class="fa fa-linkedin" style="background-color: lightskyblue;font-size: 1.5em;"></i><a href="#"><b id="title">Wile E. Coyote</b></a></h3>
+      <h3><i class="fa fa-instagram"style="font-size: 1.5em;"></i><a href="#" id="title"><b id="title">Wile E. Coyote</b></a></h3>
+      </div>
+    </div>
+
+    <div class="footer navbar-fixed-bottom">
+      <div class="text-right">
+        <p class="text-light bg-dark">Jeremy Ward <i class="fa fa-github"></i><a href=""> exochos </a></p></div>
+    </footer>
+</div>
+<script>
+$("#pic1").mouseover(function(){
+  $(this).attr("src", "https://secure.img1-fg.wfcdn.com/im/49742455/compr-r85/4145/41451772/looney-tunes-road-runner-standup.jpg");
+  $(this).css("background-color", "white");
+  $("#title").html("RoadRunner")
+  $("#toggle").hide('slow');
+  $("#info").hide('slow');
+});
+</script>
+</body>
+</html>
+

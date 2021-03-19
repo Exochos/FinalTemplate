@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+.navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: 'Acme', sans-serif;
+}
+i {
+        font-weight: 900;
+}
